@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
@@ -17,7 +18,7 @@ public class LabelEstilizado extends Application {
 		Pane painelFundo = new Pane();
 		
 		
-		Pane painelComTexto = new Pane();
+		FlowPane painelComTexto = new FlowPane();
 		Text txt = new Text("Com estilo");
 		painelComTexto.getChildren().add(txt);
 		
@@ -46,7 +47,7 @@ public class LabelEstilizado extends Application {
 	}
 	
 	public static void main(String[] args) {
-		Application.launch(args);
+		Application.launch(LabelEstilizado.class, args);
 	}
 	
 	
